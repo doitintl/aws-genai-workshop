@@ -195,6 +195,7 @@ Ignore the Network URL and External URL links displayed by the Streamlit command
     * What is the next one?
     * What is the first guitar string?
     * What is the next one?
+    
 
     ![app in use](./images/app-in-use.png)
 
