@@ -78,16 +78,59 @@ Below we will configure an AWS Cloud9 enviroment  in order to build and run gene
 
 If you have any challenges below, you may need to access Bedrock from your desktop environment, or create an alte
 
+1. In the AWS console, select the region that has Amazon Bedrock foundation models enabled.
+
+
+2. In the AWS console, search for **Cloud9**
+    * Select **Cloud9** from the search results
+
+    ![search-cloud9](./images/search-cloud9.png)
+
+3. Select **Create eenvironment**
+    ![cloud9 welcome](./images/cloud9-welcome.png)
+
+4. Set the environment details.
+    * Set **Name** to bedrock-environment
+    ![environment details](./images/environment-details.png)
+
+5. Set the EC2 instance details
+    * Set **Instance type** to **t3.medium**
+    * Set **Platform** to **Ubuntu Server 22.04 LTS**
+    * Set **Timeout** to 4 hours
+
+    ![ubuntu instance](./images/cloud9-ubuntu-instance.png)
+
+    **Did you select Ubuntu as your platform?**
+Please double-check that you set Platform to Ubuntu Server 22.04 LTS. This ensures that you will have a Python version that can support LangChain and other critical libraries.
+
+
+6. Select the **Create** button
+
+    ![create button](./images/create-button.png)
+
+7. Wait for the environment to be created.
+    * You should get a "Successfully created bedrock-environment" message in the top banner when ready.
+    * In the Environments list, click the Open link. This will launch the AWS Cloud9 IDE in a new tab.
+
+    ![cloud9 ready](./images/cloud9-ready.png)
+
+8. Confirm that the AWS Cloud9 environment loaded properly.
+    * You can close the Welcome tab
+    * You can drag tabs around to the position you want them in.
+    
+    ![cloud9 ide](./images/cloud9-ide.png)
+
 ### Lab setup
 
-1. Clone the repo to your local environment
+1. In the AWS Cloud9 IDE, select the bash termina
 
-2. Install Requirements
+    ![cloud terminal](./images/cloud9-terminal.png)
 
-        conda create -n "bedrock-workshop" python=3.10
-        conda activate bedrock-workshop
-        pip install -r requirements.txt
+2. Git clone repo
 
+3. Install Requirements
+
+        pip3 install -r requirements.txt
 
 ### Workshop
 
