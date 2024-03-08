@@ -1,3 +1,5 @@
+# Lab Intro
+
 In this lab, we will build a simple question & answer application with AI21 Jurassic 2, Titan Embeddings, LangChain, and Streamlit.
 
 Large language models are prone to hallucination, which is just a fancy word for making up a response. To correctly and consistently answer questions, we need to ensure that the model has real information available to support its responses. We use the Retrieval-Augmented Generation (RAG) pattern to make this happen.
@@ -8,7 +10,7 @@ In this lab, we will use an in-memory FAISS  database to demonstrate the RAG pat
 
 You can build the application code by copying the code snippets below and pasting into the indicated Python file.
 
-**Use cases**
+### Use cases
 
 The Retrieval-Augmented Generation pattern is good for the following use cases:
 
@@ -26,7 +28,7 @@ There is a third file to help upload sample documents to s3 to be used by the kn
 
 ![architecture](./images/architecture.png")
 
-**Create the upload files script**
+### Create the upload files script
 
 1. Open the file get_data.py
 
@@ -107,15 +109,13 @@ There is a third file to help upload sample documents to s3 to be used by the kn
             uploadDirectory(data_root, bucket_name)
 
 
-**Create a knowledge base**
+### Create a knowledge base
 
 We will create a opensearch knowledge base through the ui to convert the documents to embeddigns and store them in opensearch as vectors.
 
 1. In the console go to Bedrock service and click on **Knowledge base** on the left menu
 
 ![bedrock]("./images/knowledgebase-1.png")
-
-**Create the library script**
 
 2. Click on **Create knowledge base**
  
@@ -151,7 +151,7 @@ We will create a opensearch knowledge base through the ui to convert the documen
 ![bedrock]("./images/knowledgebase-2.png") 
     
 
-**Create app library file**
+### Create app library file
 
 We will create the supporting library to connect the Streamlit front end to the Bedrock back end.
 
@@ -221,7 +221,7 @@ We will create the supporting library to connect the Streamlit front end to the 
 
 Excellent! You are done with the backing library. Now we will create the front-end application.
 
-**Crate the Streamlit front-end app**
+### Crate the Streamlit front-end app
 
 1. In the same folder as your lib file, open the file rag_app.py
  
@@ -304,6 +304,7 @@ You should see a web page like below:
 * ¿Cuáles son algunas de las iniciativas estratégicas actuales de la empresa?* 
 * Quelle est la stratégie de l'entreprise en matière d'IA générative ?
 * Was sind die wichtigsten Wachstumstreiber für das Unternehmen? 
+
 
 5. Close the preview tab in AWS Cloud9. Return to the terminal and press Control-C to exit the application.
 
