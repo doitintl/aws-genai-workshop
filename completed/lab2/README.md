@@ -26,7 +26,7 @@ This application consists of two files: one for the Streamlit front end, and one
 
 There is a third file to help upload sample documents to s3 to be used by the knoweldge base.
 
-![architecture](./images/architecture.png")
+![architecture](./images/architecture.png)
 
 ### Create the upload files script
 
@@ -115,40 +115,40 @@ We will create a opensearch knowledge base through the ui to convert the documen
 
 1. In the console go to Bedrock service and click on **Knowledge base** on the left menu
 
-![bedrock]("./images/knowledgebase-1.png")
+![bedrock](./images/knowledgebase-1.png)
 
 2. Click on **Create knowledge base**
  
-![bedrock]("./images/knowledgebase-3.png")
+![bedrock](./images/knowledgebase-3.png)
 
 3. Leave the default values as is and click next
 
-![bedrock]("./images/knowledgebase-4.png")
+![bedrock](./images/knowledgebase-4.png)
 
 4. Click on Browse S3
 
-![bedrock]("./images/knowledgebase-5.png") 
+![bedrock](./images/knowledgebase-5.png) 
 
 5. In the new poop=up search for **bedrock** and select the bucket. The name should start with **bedrock-kb-**
 
-![bedrock]("./images/knowledgebase-6.png")
+![bedrock](./images/knowledgebase-6.png)
 
 6. Click next
 
-![bedrock]("./images/knowledgebase-7.png") 
+![bedrock](./images/knowledgebase-7.png) 
 
 7. Select Titan for then embedding model and next next
 
-![bedrock]("./images/knowledgebase-8.png")
+![bedrock](./images/knowledgebase-8.png)
 
 8. Review the values and then click next
     * The creation of the knowledge base may take a few minutes.
 
-![bedrock]("./images/knowledgebase-9.png") 
+![bedrock](./images/knowledgebase-9.png) 
 
 9. Sync the documents with the knowledge base
 
-![bedrock]("./images/knowledgebase-2.png") 
+![bedrock](./images/knowledgebase-2.png) 
     
 
 ### Create app library file
@@ -246,8 +246,6 @@ Excellent! You are done with the backing library. Now we will create the front-e
             go_button = st.button("Go", type="primary") #display a primary button
 
 
- 
-
 5. Add the output elements.
 
     * We use the if block below to handle the button click. We display a spinner while the backing function is called, then write the output to the web page.
@@ -277,11 +275,11 @@ Ignore the Network URL and External URL links displayed by the Streamlit command
  
 3. In AWS Cloud9, select Preview -> Preview Running Application.
 
-![bedrock]("./images/cloud9-preview.png") 
+![bedrock](./images/cloud9-preview.png) 
 
 You should see a web page like below:
 
-![bedrock]("./images/app-in-use.png") 
+![bedrock](./images/app-in-use.png) 
 
 4. Try out some prompts and see the results:
 

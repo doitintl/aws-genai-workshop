@@ -26,7 +26,7 @@ This application consists of two files: one for the Streamlit front end, and one
 
 There is a third file to help upload sample documents to s3 to be used by the knoweldge base.
 
-![architecture](./images/architecture.png")
+![architecture](./images/architecture.png)
 
 ### Create app library file
 
@@ -188,11 +188,11 @@ Ignore the Network URL and External URL links displayed by the Streamlit command
  
 3. In AWS Cloud9, select Preview -> Preview Running Application.
 
-![bedrock]("./images/cloud9-preview.png") 
+![bedrock](./images/cloud9-preview.png) 
 
 You should see a web page like below:
 
-![bedrock]("./images/app-in-use.png") 
+![bedrock](./images/app-in-use.png) 
 
 4. Try out some prompts and see the results:
 
